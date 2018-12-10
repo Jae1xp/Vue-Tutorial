@@ -10,17 +10,28 @@
 </head>
 <body>
   <div id="app">
-    <h1>Events</h1>
-    <button v-on:click="addYear(1)">Add 1 Year</button>
-    <button v-on:click="subtractYear(1)">Subtract 1 Year</button>
-    <button v-on:dblclick="addYear(10)">Double click to Add 10 Years</button>
-    <button v-on:dblclick="subtractYear(10)">Double click to Subtract 10 Years</button>
-    <p>My age is {{age}}</p>
+    <!-- <h1>Events</h1>
+    <label>Name:</label>
+    <input type="text" v-model="name" />
+    
+    <label>Age:</label>
+    <input type="text" v-model="age" /> -->
+    <h1>Computed Properties</h1>
+    <button v-on:click="a++">Add to A</button>
+    <button v-on:click="b++">Add to B</button>
+    <p>A - {{a}}</p>
+    <p>B - {{b}}</p>
+    <p>Age + A = {{addToA}}</p>
+    <p>Age + B = {{addToB}}</p>
+    <br>
+    <br>
     <div id="canvas" v-on:mousemove="updateXY">
       Longitude {{x}}, Latitude {{y}}
     </div>
     <!-- <a :href="website">Google</a>
     <p v-html="websiteTag"></p> -->
+    <br>
+    <a v-on:click.prevent="click" href="http://npr.org">NPR</a>
   </div>
   <script src="app.js"></script>
 </body>

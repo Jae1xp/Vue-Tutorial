@@ -1,9 +1,12 @@
 new Vue({
   el: '#app',
   data: {
-    age: 25,
+    name: '',
+    age: 20,
     x: 0,
-    y: 0
+    y: 0,
+    a: 0,
+    b: 0
   },
   methods: {
     greet: function(time) {
@@ -18,6 +21,19 @@ new Vue({
     updateXY: function(event) {
       this.x = event.offsetX;
       this.y = event.offsetY; 
+    },
+    click: function() {
+      alert('You clicked me!');
+    },
+  },
+  computed: {
+    addToA: function() {
+      console.log('adding to A');
+      return this.a + this.age;
+    },
+    addToB: function() {
+      console.log('adding to B');
+      return this.b + this.age;
     }
   }
 });
