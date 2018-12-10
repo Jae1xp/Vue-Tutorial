@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VueJS Tutorial</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Events</h1>
+    <button v-on:click="addYear(1)">Add 1 Year</button>
+    <button v-on:click="subtractYear(1)">Subtract 1 Year</button>
+    <button v-on:dblclick="addYear(10)">Double click to Add 10 Years</button>
+    <button v-on:dblclick="subtractYear(10)">Double click to Subtract 10 Years</button>
+    <p>My age is {{age}}</p>
+    <div id="canvas" v-on:mousemove="updateXY">
+      Longitude {{x}}, Latitude {{y}}
+    </div>
+    <!-- <a :href="website">Google</a>
+    <p v-html="websiteTag"></p> -->
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
