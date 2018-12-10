@@ -10,13 +10,17 @@
 </head>
 <body>
   <div id="app">
+    <!-- 1st commit -->
     <!-- <h1>Events</h1>
     <label>Name:</label>
     <input type="text" v-model="name" />
     
     <label>Age:</label>
     <input type="text" v-model="age" /> -->
-    <h1>Computed Properties</h1>
+    <!-- End 1st commit -->
+
+    <!-- 2nd commit -->
+    <!-- <h1>Computed Properties</h1>
     <button v-on:click="a++">Add to A</button>
     <button v-on:click="b++">Add to B</button>
     <p>A - {{a}}</p>
@@ -27,11 +31,18 @@
     <br>
     <div id="canvas" v-on:mousemove="updateXY">
       Longitude {{x}}, Latitude {{y}} 
-    </div>
+    </div> -->
+    <!-- End 2nd commit -->
     <!-- <a :href="website">Google</a>
     <p v-html="websiteTag"></p> -->
-    <br>
-    <a v-on:click.prevent="click" href="http://npr.org">NPR</a>
+    <!-- <br> -->
+    <!-- <a v-on:click.prevent="click" href="http://npr.org">NPR</a> -->
+    <h1>Conditionals</h1>
+    <button v-on:click="error = !error">Toggle Error</button>
+    <button v-on:click="success = !success">Toggle Success</button>
+    <p v-if="error">¯\_(ツ)_/¯</p>
+    <p v-else-if="success">Success!!!</p>
+
   </div>
   <script src="app.js"></script>
 </body>
