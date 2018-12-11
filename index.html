@@ -37,11 +37,24 @@
     <p v-html="websiteTag"></p> -->
     <!-- <br> -->
     <!-- <a v-on:click.prevent="click" href="http://npr.org">NPR</a> -->
-    <h1>Conditionals</h1>
+
+    <!-- 3rd Commit -->
+    <!-- <h1>Conditionals</h1>
     <button v-on:click="error = !error">Toggle Error</button>
     <button v-on:click="success = !success">Toggle Success</button>
     <p v-if="error">¯\_(ツ)_/¯</p>
-    <p v-else-if="success">Success!!!</p>
+    <p v-else-if="success">Success!!!</p> -->
+    <!-- End 3rd Commit -->
+
+    <h1>Looping through arrays</h1>
+    <ul>
+      <li v-for="character in characters">
+        {{character}}
+      </li>
+      <li v-for="(ninja, index) in ninjas">
+        Index: {{index}}. {{ninja.name}}, Age: {{ninja.age}}
+      </li>
+    </ul>
 
   </div>
   <script src="app.js"></script>

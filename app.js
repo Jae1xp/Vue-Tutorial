@@ -7,8 +7,14 @@ new Vue({
     // y: 0,
     // a: 0,
     // b: 0
-    error: false,
-    success: false
+    // error: false,
+    // success: false
+    characters: ['Mario', 'Luigi', 'Yoshi', 'Bowser'],
+    ninjas: [
+      { name: 'Ryu', age: 41},
+      { name: 'Kennen', age: 15},
+      { name: 'Jae', age: 25}
+    ]
   },
   methods: {
     // greet: function(time) {
